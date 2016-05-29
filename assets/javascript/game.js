@@ -16,6 +16,7 @@ var losses = 0;
 console.log(values);
 
 $(".targetNumber").append("Goal Number: " + values.goal);
+$(".winsLosses").append("Your Wins :" + "<p></p>" + "Your Losses: ");
 $(".userScore").append("Your Score: " + values.score);
 
 
