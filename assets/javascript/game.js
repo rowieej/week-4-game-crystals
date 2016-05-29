@@ -16,7 +16,7 @@ var losses = 0;
 console.log(values);
 
 //call upon function once player has matched the number or gone over the goal number
-function reset(){
+var reset = function(){
 	var values = {
 			goal: Math.floor(Math.random() * 120) + 19, 
 			yellow: Math.floor(Math.random() * 12) + 1,
@@ -36,7 +36,7 @@ function reset(){
 								$(".winsLosses").append("Your Wins: " + wins + "<p></p>" + "Your Losses: " + losses);
 								reset();
 							}
-							if(values.score > values.goals){
+							if(values.score > values.goal){
 								losses++;
 								$(".winsLosses").append("Your Wins: " + wins + "<p></p>" + "Your Losses: " + losses);
 								reset();
@@ -52,7 +52,7 @@ function reset(){
 								$(".winsLosses").append("Your Wins: " + wins + "<p></p>" + "Your Losses: " + losses);
 								reset();
 							}
-							if(values.score > values.goals){
+							if(values.score > values.goal){
 								losses++;
 								$(".winsLosses").append("Your Wins: " + wins + "<p></p>" + "Your Losses: " + losses);
 								reset();
@@ -68,7 +68,7 @@ function reset(){
 									$(".winsLosses").append("Your Wins: " + wins + "<p></p>" + "Your Losses: " + losses);
 									reset();
 							}
-								if(values.score > values.goals){
+								if(values.score >= values.goal){
 									losses++;
 									$(".winsLosses").append("Your Wins: " + wins + "<p></p>" + "Your Losses: " + losses);
 									reset();
@@ -84,7 +84,7 @@ function reset(){
 									$(".winsLosses").append("Your Wins: " + wins + "<p></p>" + "Your Losses: " + losses);
 									reset();
 								}
-								if(values.score > values.goals){
+								if(values.score >= values.goal){
 										losses++;
 										$(".winsLosses").append("Your Wins: " + wins + "<p></p>" + "Your Losses: " + losses);
 										reset();
