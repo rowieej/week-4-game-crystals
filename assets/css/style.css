@@ -1,0 +1,60 @@
+
+body {
+    background: #000000;
+    background-image:url('../images/crystalgame_background.jpg');
+    background-size:100%;
+    background-repeat: repeat;
+    font-family: "Lucida Console", Monaco, monospace;
+    
+  }
+
+.header1{
+	color: #01f;
+	padding: 10px;
+	background-color: #fdff00;
+	width: 40%;
+	margin: 10px 10px;
+}
+
+.container{
+
+}
+
+.directions{
+	font-size: 10px;
+	color: #fff;
+	background-color: #35382D;
+	width: 33%;
+	padding: 10px;
+	position: relative;
+
+}
+.targetNumber{
+	background-color: #2edbcd;
+	width: 33%;
+	color: #fff;
+	padding: 10px;
+	margin-top: 10px;
+	font-size: 20px;
+}
+.userScore{
+	background-color: #fff;
+	width: 33%;
+	color: #01f;
+	padding: 10px;
+	margin-top: 10px;
+	font-size: 11px;
+}
+
+.gems{
+	height: 75px;
+	width: 75px;
+}
+.winsLosses{
+	background-color: #fff;
+	width: 33%;
+	color: #01f;
+	padding: 10px;
+	margin-top: 10px;
+	font-size: 11px;
+}
