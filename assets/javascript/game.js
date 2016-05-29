@@ -30,7 +30,7 @@ function reset(){
 			$('#yellow').on ('click', function(){
 						values.score = (values.score + values.yellow);
 						console.log("New total= " + values.score);
-						$(".userScore").append(values.score);
+						$(".userScore").html("Your Score: " + values.score);
 							if(values.score == values.goal){
 								wins++;
 								$(".winsLosses").append("Your Wins: " + wins + "<p></p>" + "Your Losses: " + losses);
@@ -46,7 +46,7 @@ function reset(){
 			$('#purple').on ('click', function(){
 						values.score = (values.score + values.purple);
 						console.log("New total= " + values.score);
-						$(".userScore").append("Your Score: " + values.score);
+						$(".userScore").html("Your Score: " + values.score);
 								if(values.score == values.goal){
 								wins++;
 								$(".winsLosses").append("Your Wins: " + wins + "<p></p>" + "Your Losses: " + losses);
@@ -62,7 +62,7 @@ function reset(){
 			$('#ruby').on ('click', function(){
 						values.score = (values.score + values.ruby);
 						console.log("New total= " + values.score);
-						$(".userScore").append("Your Score: " + values.score);
+						$(".userScore").html("Your Score: " + values.score);
 								if(values.score == values.goal){
 									wins++;
 									$(".winsLosses").append("Your Wins: " + wins + "<p></p>" + "Your Losses: " + losses);
@@ -78,7 +78,7 @@ function reset(){
 			$('#blue').on ('click', function(){
 						values.score = (values.score + values.blue);
 						console.log("New total= " + values.score);
-						$(".userScore").append("Your Score: " + values.score);
+						$(".userScore").html("Your Score: " + values.score);
 								if(values.score == values.goal){
 									wins++;
 									$(".winsLosses").append("Your Wins: " + wins + "<p></p>" + "Your Losses: " + losses);
