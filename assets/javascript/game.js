@@ -33,12 +33,12 @@ var reset = function(){
 						$(".userScore").html("Your Score: " + values.score);
 							if(values.score == values.goal){
 								wins++;
-								$(".winsLosses").append("Your Wins: " + wins + "<p></p>" + "Your Losses: " + losses);
+								$(".winsLosses").html("Your Wins: " + wins + "<p></p>" + "Your Losses: " + losses);
 								reset();
 							}
 							if(values.score > values.goal){
 								losses++;
-								$(".winsLosses").append("Your Wins: " + wins + "<p></p>" + "Your Losses: " + losses);
+								$(".winsLosses").html("Your Wins: " + wins + "<p></p>" + "Your Losses: " + losses);
 								reset();
 							}
 			});
@@ -47,14 +47,14 @@ var reset = function(){
 						values.score = (values.score + values.purple);
 						console.log("New total= " + values.score);
 						$(".userScore").html("Your Score: " + values.score);
-								if(values.score == values.goal){
+							if(values.score == values.goal){
 								wins++;
-								$(".winsLosses").append("Your Wins: " + wins + "<p></p>" + "Your Losses: " + losses);
+								$(".winsLosses").html("Your Wins: " + wins + "<p></p>" + "Your Losses: " + losses);
 								reset();
 							}
 							if(values.score > values.goal){
 								losses++;
-								$(".winsLosses").append("Your Wins: " + wins + "<p></p>" + "Your Losses: " + losses);
+								$(".winsLosses").html("Your Wins: " + wins + "<p></p>" + "Your Losses: " + losses);
 								reset();
 							}
 			});
@@ -63,15 +63,15 @@ var reset = function(){
 						values.score = (values.score + values.ruby);
 						console.log("New total= " + values.score);
 						$(".userScore").html("Your Score: " + values.score);
-								if(values.score == values.goal){
-									wins++;
-									$(".winsLosses").append("Your Wins: " + wins + "<p></p>" + "Your Losses: " + losses);
-									reset();
+							if(values.score == values.goal){
+								wins++;
+								$(".winsLosses").html("Your Wins: " + wins + "<p></p>" + "Your Losses: " + losses);
+								reset();
 							}
-								if(values.score >= values.goal){
-									losses++;
-									$(".winsLosses").append("Your Wins: " + wins + "<p></p>" + "Your Losses: " + losses);
-									reset();
+							if(values.score > values.goal){
+								losses++;
+								$(".winsLosses").html("Your Wins: " + wins + "<p></p>" + "Your Losses: " + losses);
+								reset();
 							}
 			});
 
@@ -79,16 +79,16 @@ var reset = function(){
 						values.score = (values.score + values.blue);
 						console.log("New total= " + values.score);
 						$(".userScore").html("Your Score: " + values.score);
-								if(values.score == values.goal){
-									wins++;
-									$(".winsLosses").append("Your Wins: " + wins + "<p></p>" + "Your Losses: " + losses);
-									reset();
-								}
-								if(values.score >= values.goal){
-										losses++;
-										$(".winsLosses").append("Your Wins: " + wins + "<p></p>" + "Your Losses: " + losses);
-										reset();
-								}
+							if(values.score == values.goal){
+								wins++;
+								$(".winsLosses").html("Your Wins: " + wins + "<p></p>" + "Your Losses: " + losses);
+								reset();
+							}
+							if(values.score > values.goal){
+								losses++;
+								$(".winsLosses").html("Your Wins: " + wins + "<p></p>" + "Your Losses: " + losses);
+								reset();
+							}
 			});
 
 $(".targetNumber").append("Goal Number: " + values.goal);
