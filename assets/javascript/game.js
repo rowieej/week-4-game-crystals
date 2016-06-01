@@ -17,15 +17,15 @@ console.log(values);
 
 //call upon function once player has matched the number or gone over the goal number
 var reset = function(){
-	var values = {
+	 values = {
 			goal: Math.floor(Math.random() * 120) + 19, 
 			yellow: Math.floor(Math.random() * 12) + 1,
 			purple: Math.floor(Math.random() * 12) + 1,
 			ruby: Math.floor(Math.random() * 12) + 1,
 			blue: Math.floor(Math.random() * 12) + 1,
 			score: 0,
-	};
-}
+	}
+};
 //set up all the click functions and if statements
 			$('#yellow').on ('click', function(){
 						values.score = (values.score + values.yellow);
